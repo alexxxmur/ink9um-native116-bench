@@ -1,0 +1,28 @@
+{
+ "segment": "0009B_20250919125754",
+ "shift": [
+  5,
+  8
+ ],
+ "t_star": 75,
+ "t_star_frac": 0.2941,
+ "ba_at_t_star": 0.8913,
+ "ba_at_47": 0.8861,
+ "ba_at_128": 0.8867,
+ "teacher_auc_vs_manual": 0.9569,
+ "n_pos": 544100,
+ "n_neg": 1901997,
+ "manual_ink_frac": 0.2224,
+ "in_range_0p12_0p26": false,
+ "domain": "supervision minus validation, valid, teacher > 0 (native grid)",
+ "t_used": 66,
+ "t_used_frac": 0.2588,
+ "t_used_reason": "t*=75 (0.294) is outside the protocol range 0.12-0.26; the BA curve is a plateau (within 0.005 of max: 48-130 on supervision minus validation, 45-95 on validation where t*=60). 66 = upper protocol bound, inside the plateau on all domains (BA 0.8908 vs 0.8913). Decided 2026-10-12 10:52 MSK before any training.",
+ "ba_plateau_sup_minus_val": [
+  48,
+  130
+ ],
+ "t_star_validation_region": 60,
+ "t_star_no_shift": 63,
+ "ba_no_shift": 0.8825
+}

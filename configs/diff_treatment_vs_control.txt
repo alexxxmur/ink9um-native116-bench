@@ -1,0 +1,56 @@
+2c2
+<     "description": "FL4-C TREATMENT: init dense_native_016000; native113 PHerc0139 (5 official native9 sparse + 10 dense 78keV-teacher, key 0139nat=44/64) + native 8.64um/116keV PHerc0343P dense 2.215um-teacher pseudo-labels (key 0343Pnat=20/64, t=66/255 from 0009B manual labels, CT-registered teacher shift). 16k steps. Held out: title w024 w047 w053, 0343P 20250511003658, 0009B, c343.",
+---
+>     "description": "FL4-C MATCHED CONTROL: identical to train_treatment.json except the native116 dataset entry is absent and the quota is 0139nat=64/64.",
+63,64c63
+<             "0139nat": 44,
+<             "0343Pnat": 20
+---
+>             "0139nat": 64
+78c77
+<     "out_dir": "<runs>/treatment",
+---
+>     "out_dir": "<runs>/control",
+166,207d164
+<             }
+<         },
+<         {
+<             "segments_path": "<root>/labels/native-dense-0343P-116keV",
+<             "segments": [
+<                 "0343P_20250902170435--5_b2",
+<                 "0343P_20250902170441--4_b2",
+<                 "0343P_20250902170447--3_b2",
+<                 "0343P_20250902171202--2_b2",
+<                 "0343P_20250902171204--1_b2",
+<                 "0343P_20250904233748-0_b2",
+<                 "0343P_20250905172054-1_b2"
+<             ],
+<             "surface_volume_paths": {
+<                 "0343P_20250902170435--5_b2": "<root>/volumes/native116/0343P_20250902170435--5_b2.zarr",
+<                 "0343P_20250902170441--4_b2": "<root>/volumes/native116/0343P_20250902170441--4_b2.zarr",
+<                 "0343P_20250902170447--3_b2": "<root>/volumes/native116/0343P_20250902170447--3_b2.zarr",
+<                 "0343P_20250902171202--2_b2": "<root>/volumes/native116/0343P_20250902171202--2_b2.zarr",
+<                 "0343P_20250902171204--1_b2": "<root>/volumes/native116/0343P_20250902171204--1_b2.zarr",
+<                 "0343P_20250904233748-0_b2": "<root>/volumes/native116/0343P_20250904233748-0_b2.zarr",
+<                 "0343P_20250905172054-1_b2": "<root>/volumes/native116/0343P_20250905172054-1_b2.zarr"
+<             },
+<             "volume_scale": 0,
+<             "source_family": "native_8p64_level0_dense116keV",
+<             "sampling_scroll": "0343Pnat",
+<             "sampling_physical_segment_keys": {
+<                 "0343P_20250902170435--5_b2": "0343Pnat:0343P_20250902170435--5_b2",
+<                 "0343P_20250902170441--4_b2": "0343Pnat:0343P_20250902170441--4_b2",
+<                 "0343P_20250902170447--3_b2": "0343Pnat:0343P_20250902170447--3_b2",
+<                 "0343P_20250902171202--2_b2": "0343Pnat:0343P_20250902171202--2_b2",
+<                 "0343P_20250902171204--1_b2": "0343Pnat:0343P_20250902171204--1_b2",
+<                 "0343P_20250904233748-0_b2": "0343Pnat:0343P_20250904233748-0_b2",
+<                 "0343P_20250905172054-1_b2": "0343Pnat:0343P_20250905172054-1_b2"
+<             },
+<             "sampling_representation_keys": {
+<                 "0343P_20250902170435--5_b2": "native_8p64_level0_dense116keV:0343P_20250902170435--5_b2",
+<                 "0343P_20250902170441--4_b2": "native_8p64_level0_dense116keV:0343P_20250902170441--4_b2",
+<                 "0343P_20250902170447--3_b2": "native_8p64_level0_dense116keV:0343P_20250902170447--3_b2",
+<                 "0343P_20250902171202--2_b2": "native_8p64_level0_dense116keV:0343P_20250902171202--2_b2",
+<                 "0343P_20250902171204--1_b2": "native_8p64_level0_dense116keV:0343P_20250902171204--1_b2",
+<                 "0343P_20250904233748-0_b2": "native_8p64_level0_dense116keV:0343P_20250904233748-0_b2",
+<                 "0343P_20250905172054-1_b2": "native_8p64_level0_dense116keV:0343P_20250905172054-1_b2"

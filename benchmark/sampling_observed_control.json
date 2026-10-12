@@ -1,0 +1,167 @@
+{
+  "batches_yielded_to_dataloader": 16013,
+  "observed_by_physical_segment": {
+    "0139nat:w030": 78833,
+    "0139nat:w032": 78833,
+    "0139nat:w033": 78834,
+    "0139nat:w034": 78833,
+    "0139nat:w035": 78833,
+    "0139nat:w039": 78833,
+    "0139nat:w040": 78833,
+    "0139nat:w041": 78834,
+    "0139nat:w043": 78833,
+    "0139nat:w044": 78833,
+    "0139nat:w046": 78834,
+    "0139nat:w049": 78833,
+    "0139nat:w050": 78833
+  },
+  "observed_by_representation": {
+    "native_9p362_level0:w035": 78833,
+    "native_9p362_level0:w039": 78833,
+    "native_9p362_level0:w040": 39416,
+    "native_9p362_level0:w041": 39417,
+    "native_9p362_level0:w044": 78833,
+    "native_9p362_level0_dense78keV:w030": 78833,
+    "native_9p362_level0_dense78keV:w032": 78833,
+    "native_9p362_level0_dense78keV:w033": 78834,
+    "native_9p362_level0_dense78keV:w034": 78833,
+    "native_9p362_level0_dense78keV:w040": 39417,
+    "native_9p362_level0_dense78keV:w041": 39417,
+    "native_9p362_level0_dense78keV:w043": 78833,
+    "native_9p362_level0_dense78keV:w046": 78834,
+    "native_9p362_level0_dense78keV:w049": 78833,
+    "native_9p362_level0_dense78keV:w050": 78833
+  },
+  "observed_by_scroll": {
+    "0139nat": 1024832
+  },
+  "patch_queue_recycles": {
+    "native_9p362_level0:w035": 63,
+    "native_9p362_level0:w039": 116,
+    "native_9p362_level0:w040": 20,
+    "native_9p362_level0:w041": 62,
+    "native_9p362_level0:w044": 60,
+    "native_9p362_level0_dense78keV:w030": 1,
+    "native_9p362_level0_dense78keV:w032": 1,
+    "native_9p362_level0_dense78keV:w033": 1,
+    "native_9p362_level0_dense78keV:w034": 1,
+    "native_9p362_level0_dense78keV:w040": 0,
+    "native_9p362_level0_dense78keV:w041": 0,
+    "native_9p362_level0_dense78keV:w043": 1,
+    "native_9p362_level0_dense78keV:w046": 2,
+    "native_9p362_level0_dense78keV:w049": 1,
+    "native_9p362_level0_dense78keV:w050": 4
+  },
+  "samples_yielded_to_dataloader": 1024832,
+  "seed": 42,
+  "strategy": "fixed_scroll_prior_stratified",
+  "target": {
+    "batch_size": 64,
+    "batches_per_loader_epoch": 6411,
+    "physical_segments_by_scroll": {
+      "0139nat": [
+        "0139nat:w030",
+        "0139nat:w032",
+        "0139nat:w033",
+        "0139nat:w034",
+        "0139nat:w035",
+        "0139nat:w039",
+        "0139nat:w040",
+        "0139nat:w041",
+        "0139nat:w043",
+        "0139nat:w044",
+        "0139nat:w046",
+        "0139nat:w049",
+        "0139nat:w050"
+      ]
+    },
+    "representations_by_physical_segment": {
+      "0139nat:w030": [
+        "native_9p362_level0_dense78keV:w030"
+      ],
+      "0139nat:w032": [
+        "native_9p362_level0_dense78keV:w032"
+      ],
+      "0139nat:w033": [
+        "native_9p362_level0_dense78keV:w033"
+      ],
+      "0139nat:w034": [
+        "native_9p362_level0_dense78keV:w034"
+      ],
+      "0139nat:w035": [
+        "native_9p362_level0:w035"
+      ],
+      "0139nat:w039": [
+        "native_9p362_level0:w039"
+      ],
+      "0139nat:w040": [
+        "native_9p362_level0:w040",
+        "native_9p362_level0_dense78keV:w040"
+      ],
+      "0139nat:w041": [
+        "native_9p362_level0:w041",
+        "native_9p362_level0_dense78keV:w041"
+      ],
+      "0139nat:w043": [
+        "native_9p362_level0_dense78keV:w043"
+      ],
+      "0139nat:w044": [
+        "native_9p362_level0:w044"
+      ],
+      "0139nat:w046": [
+        "native_9p362_level0_dense78keV:w046"
+      ],
+      "0139nat:w049": [
+        "native_9p362_level0_dense78keV:w049"
+      ],
+      "0139nat:w050": [
+        "native_9p362_level0_dense78keV:w050"
+      ]
+    },
+    "seed": 42,
+    "source_patches": 410335,
+    "source_patches_by_physical_segment": {
+      "0139nat:w030": 44195,
+      "0139nat:w032": 45157,
+      "0139nat:w033": 45865,
+      "0139nat:w034": 45752,
+      "0139nat:w035": 1247,
+      "0139nat:w039": 677,
+      "0139nat:w040": 44831,
+      "0139nat:w041": 43019,
+      "0139nat:w043": 42732,
+      "0139nat:w044": 1306,
+      "0139nat:w046": 37542,
+      "0139nat:w049": 40423,
+      "0139nat:w050": 17589
+    },
+    "source_patches_by_representation": {
+      "native_9p362_level0:w035": 1247,
+      "native_9p362_level0:w039": 677,
+      "native_9p362_level0:w040": 1928,
+      "native_9p362_level0:w041": 628,
+      "native_9p362_level0:w044": 1306,
+      "native_9p362_level0_dense78keV:w030": 44195,
+      "native_9p362_level0_dense78keV:w032": 45157,
+      "native_9p362_level0_dense78keV:w033": 45865,
+      "native_9p362_level0_dense78keV:w034": 45752,
+      "native_9p362_level0_dense78keV:w040": 42903,
+      "native_9p362_level0_dense78keV:w041": 42391,
+      "native_9p362_level0_dense78keV:w043": 42732,
+      "native_9p362_level0_dense78keV:w046": 37542,
+      "native_9p362_level0_dense78keV:w049": 40423,
+      "native_9p362_level0_dense78keV:w050": 17589
+    },
+    "source_patches_by_scroll": {
+      "0139nat": 410335
+    },
+    "strategy": "fixed_scroll_prior_stratified",
+    "target_fraction": {
+      "0139nat": 1.0
+    },
+    "target_per_batch": {
+      "0139nat": 64
+    }
+  },
+  "training_step_completed": 16000
+}
