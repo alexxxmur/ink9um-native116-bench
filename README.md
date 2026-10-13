@@ -15,7 +15,7 @@ segment against a matched control) transfer to 116 keV if one repeats it with na
    116 keV scroll.** On 0009B the fine-tuned model scores 0.903 against 0.904 for the matched control and 0.900 for the
    initialization; the four treatment and four control checkpoints overlap completely.
 3. **The same training gives a large, consistent gain on the scroll it was trained on.** On our own render of
-   Nieuwlaar's PHerc0343 w047–w048 segment (letter boxes as key) box-AUC rises from 0.654 to 0.712, all four treatment
+   Nieuwlaar's PHerc0343 w047–w048 segment (letter boxes as key) box-AUC rises from 0.654 to 0.711, all four treatment
    checkpoints above all four control checkpoints (which fall to 0.627–0.636). PHerc0343P are pieces of PHerc0343
    (separate scan, same inventory number). The gain is a same-scroll effect, not a protocol effect.
 
@@ -34,7 +34,7 @@ at the same step. Full numbers: `benchmark/BENCHMARK.csv`, `benchmark/bench_fina
 | control | protocol | key | R0 | DN (init) | STACK-A | X treatment 4k / 8k / **12k** / 16k | X control 4k / 8k / **12k** / 16k |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **PHerc0009B** 20250919125754 | 8.64 µm / 116 keV | manual labels (20260918) | 0.781 | 0.900 | 0.913 | 0.901 / 0.901 / **0.903** / 0.902 | 0.902 / 0.903 / **0.904** / 0.905 |
-| **c343** (PHerc0343 w047–w048, our 66-layer render) | 8.64 µm / 116 keV | Nieuwlaar's letter boxes, box-AUC | 0.632 | 0.654 | 0.678 | 0.704 / 0.696 / **0.712** / 0.706 | 0.636 / 0.632 / **0.627** / 0.631 |
+| **c343** (PHerc0343 w047–w048, our 66-layer render) | 8.64 µm / 116 keV | Nieuwlaar's letter boxes, box-AUC | 0.632 | 0.654 | 0.678 | 0.704 / 0.696 / **0.711** / 0.706 | 0.636 / 0.632 / **0.627** / 0.631 |
 | held-out PHerc0343P 20250511003658 | 8.64 µm / 116 keV | 2.2 µm teacher (upper bound) | 0.673 | 0.817 | 0.814 | 0.825 / 0.837 / **0.837** / 0.836 | 0.824 / 0.825 / **0.819** / 0.823 |
 | PHerc0139 title | 9.362 µm / 113 keV | 78 keV teacher classes (Nieuwlaar's bench) | 0.814 | 0.960 | 0.937 | 0.964 / 0.969 / **0.968** / 0.967 | 0.975 / 0.971 / **0.970** / 0.971 |
 | PHerc0841 w00 | 9.366 µm / 113 keV | labels 20260918 | 0.768 | 0.881 | 0.892 | 0.889 / 0.893 / **0.892** / 0.889 | 0.898 / 0.893 / **0.893** / 0.891 |
