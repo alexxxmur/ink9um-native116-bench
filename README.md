@@ -9,15 +9,16 @@ segment against a matched control) transfer to 116 keV if one repeats it with na
 **Answer (one day of GPU, everything public, benchmark frozen before training).**
 
 1. **The public models already read native 116 keV ink without any 116 keV training.** On PHerc0009B (8.64 µm / 116 keV,
-   manual ink labels, in no model's training set) `dense_native` scores AUC 0.900 and the 5-model stack 0.913; the maps
+   manual ink labels; not in the training sets of ink_9um, KLAVIS dense or dense_native) `dense_native` scores AUC 0.900 and the 5-model stack 0.913; the maps
    show the letters (`figures/0009B_compare.png`). There is no "116 keV domain gap" to close.
 2. **Dense native 116 keV pseudo-labels (7 PHerc0343P segments, 2.2 µm canonical teacher) do not improve a different
    116 keV scroll.** On 0009B the fine-tuned model scores 0.903 against 0.904 for the matched control and 0.900 for the
    initialization; the four treatment and four control checkpoints overlap completely.
 3. **The same training gives a large, consistent gain on the scroll it was trained on.** On our own render of
    Nieuwlaar's PHerc0343 w047–w048 segment (letter boxes as key) box-AUC rises from 0.654 to 0.711, all four treatment
-   checkpoints above all four control checkpoints (which fall to 0.627–0.636). PHerc0343P are pieces of PHerc0343
-   (separate scan, same inventory number). The gain is a same-scroll effect, not a protocol effect.
+   checkpoints above all four control checkpoints (which fall to 0.627–0.636). PHerc0343P and PHerc0343
+   share an inventory number (separate scans), so PHerc0343P are most likely pieces of the same scroll. The gain reads
+   as a same-scroll effect, not a protocol effect.
 
 So: for 116 keV targets, spend effort on surfaces and on data from the target scroll itself, not on protocol-specific
 fine-tuning.
@@ -155,6 +156,6 @@ registry and metric code shared with our earlier calibration of the public model
   `Nieuwlaar/ink9um-dense-native` (MIT). KLAVIS dense checkpoint: `domenicor046/ink9um-dense`.
 - `ink_9um`, `hecate`, canonical 2 µm ink maps, surface volumes, labels: Vesuvius Challenge / Scroll Prize open data.
 - Letter-scale score: ShribyrLabs `vesuvius-reports`. Depth-window and native-0841 conventions: AndreasHad04
-  `villa-apple-silicon` (his 0009B native measurement, 0.815 for the released model, is reproduced here as R0 0.781 on
-  our tighter crop with the released window).
+  `villa-apple-silicon` (his 0009B native measurement is 0.815 for the released model; our R0 on our tighter crop with
+  the [4, 25) window is 0.781 - a different crop, not a reproduction).
 - Code and weights in this repository: MIT. Author: alexxxmur, October 2026.
